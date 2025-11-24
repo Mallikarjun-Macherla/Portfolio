@@ -11,13 +11,12 @@
     <meta property="og:title" content="Mallikarjun Macherla Portfolio">
     <meta property="og:description" content="Projects in deepfake detection, payment fraud analysis, ML, and full-stack development.">
     <meta property="og:image" content="assets/img/image.png">
-    <!-- Optional: set real deployment URL below -->
     <!-- <meta property="og:url" content="https://your-domain.example"> -->
-    <link rel="icon" type="image/png" href="assets/img/image.png">
+    <link rel="icon" type="image/png" href="src/assets/img/image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!-- Updated stylesheet path to new src structure -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="src/styles/index.css">
 </head>
 <body>
@@ -32,7 +31,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#certificates">Certificates</a></li>
             <li><a href="#contact">Contact</a></li>
-                <li><a class="theme-btn" href="src/assets/docs/Resume.pdf" download aria-label="Download Resume PDF">Resume</a></li>
+                <li><a class="theme-btn" href="https://drive.google.com/file/d/1FG8zsD1N3R18Qm017e5hjNaHKJT1oz9f/view?usp=sharing" target="_blank" aria-label="Download Resume PDF">Resume</a></li>
         </ul>
         <button id="theme-toggle" class="theme-btn">Switch Theme</button>
     </nav>
@@ -41,7 +40,7 @@
     <div class="container">
         <header id="home">
             <div class="hero-banner">
-                <img src="assets/img/image.png" alt="Pixel-stylized mountain landscape background" class="hero-img-pixel" loading="lazy" decoding="async" fetchpriority="high" />
+                <img src="src/assets/img/image.png" alt="Pixel-stylized mountain landscape background" class="hero-img-pixel" loading="lazy" decoding="async" fetchpriority="high" />
                 <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <h1>Macherla Mallikarjun</h1>
@@ -53,7 +52,7 @@
         <main>
             <section class="about" id="about">
                 <h2>About Me</h2>
-                <p>I’m a computer science student with a strong foundation in programming, data structures, and full-stack development. I enjoy solving problems, building web applications, and exploring machine learning through hands-on projects.</p>
+                <p>I’m a computer science student with a strong foundation in programming, data structures, and AI/ML. I enjoy solving problems, building web applications, and exploring machine learning through hands-on projects.</p>
             </section>
             <section class="projects" id="projects">
                 <h2 class="section-heading section-heading--projects">Curious to <span class="accent">see</span> my work?</h2>
@@ -129,11 +128,11 @@
         </main>
     </div>
     <footer id="contact" class="footer-contact">
-            <div class="footer-contact-wrapper">
-                <div class="footer-about">
+        <div class="footer-contact-wrapper">
+            <div class="footer-about">
                 <h2>Connect With Me</h2>
                 <p>Always open to connect and collaborate!</p>
-                <div class="footer-links-vertical" style="display: flex; flex-direction: column; align-items: center; gap: 1em; margin-top: 1em;">
+                <div class="footer-links-vertical">
                     <a href="mailto:mallikarjunmac05@gmail.com" target="_blank" rel="noopener noreferrer" class="footer-link-row">
                         <span class="icon-pixel icon-email" aria-hidden="true"></span>
                         <span>Email</span>
@@ -150,7 +149,7 @@
             </div>
         </div>
     </footer>
-    <!-- Updated script paths to new src/scripts directory -->
+    <!-- Connecting Scripts -->
     <script src="src/scripts/starfield.js" defer></script>
     <script src="src/scripts/main.js" defer></script>
     <script src="src/scripts/backgrounds.js" defer></script>

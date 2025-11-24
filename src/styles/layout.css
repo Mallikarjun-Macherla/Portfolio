@@ -26,8 +26,57 @@ section {
     align-items: stretch; /* make all cards match tallest row item */
     gap: 2.5em;
 }
-@media (max-width: 700px) {
-    .main-container { padding: 1em 0.5em; }
-    section { padding: 1em 0.5em; }
-    .grid { gap: 1em; }
+/* Mobile first - Small phones */
+@media (max-width: 375px) {
+    .main-container { padding: 0.75em 0.5em; }
+    section { padding: 0.75em 0.5em; }
+    .grid { 
+        grid-template-columns: 1fr;
+        gap: 1em; 
+    }
+    .projects-grid { gap: 1em; }
+}
+
+/* Standard mobile */
+@media (min-width: 376px) and (max-width: 767px) {
+    .main-container { padding: 1em 0.75em; }
+    section { padding: 1em 0.75em; }
+    .grid { 
+        grid-template-columns: 1fr;
+        gap: 1.5em; 
+    }
+    .projects-grid { gap: 1.5em; }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-container { padding: 1.5em 1em; }
+    section { padding: 1.5em 1em; }
+    .grid { 
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2em; 
+    }
+    .projects-grid { gap: 2em; }
+}
+
+/* Small laptops */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .main-container { 
+        max-width: 1000px;
+        padding: 2em 1.5em; 
+    }
+    section { padding: 2em 1.5em; }
+    .grid { gap: 2.5em; }
+    .projects-grid { gap: 2.5em; }
+}
+
+/* Large screens */
+@media (min-width: 1440px) {
+    .main-container { 
+        max-width: 1200px;
+        padding: 2.5em 2em; 
+    }
+    section { padding: 2.5em 2em; }
+    .grid { gap: 3em; }
+    .projects-grid { gap: 3em; }
 }

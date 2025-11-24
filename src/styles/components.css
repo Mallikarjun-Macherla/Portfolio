@@ -41,19 +41,20 @@ nav a.active, nav a:hover, nav a:focus {
     border: 3px solid #b3b3ff;
     box-shadow: 0 0 0 4px #18181b, 0 0 0 8px #23232b;
     border-radius: 0;
-    padding: 1.5em 1em; /* reduced padding for smaller footprint */
+    padding: 1.5em 1em;
     margin-bottom: 1em;
-    font-size: 0.9rem; /* slightly smaller text */
+    font-size: 0.9rem;
     color: #b3b3ff;
     text-align: center;
-    width: 300px; /* narrower card */
-    max-width: 300px;
+    width: 100%;
+    min-width: 280px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 340px; /* fixed height similar to original smaller cards */
-    overflow: hidden; /* hide any slight overflow outside card */
+    min-height: 340px;
+    overflow: hidden;
 }
 
 /* Make description area consume remaining space and allow internal scroll if long */
@@ -63,6 +64,23 @@ nav a.active, nav a:hover, nav a:focus {
     scrollbar-width: none; /* Firefox hide */
 }
 .project-card__desc::-webkit-scrollbar { display: none; }
+
+/* Responsive adjustments for project cards */
+@media (max-width: 375px) {
+    .project-card {
+        min-width: 260px;
+        padding: 1em 0.75em;
+        font-size: 0.85rem;
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .project-card {
+        min-width: 300px;
+        max-width: 450px;
+    }
+}
 .overlay {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;

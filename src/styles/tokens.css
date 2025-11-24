@@ -4,8 +4,8 @@
   --color-bg: #18181b;
   --color-bg-alt: #23232b;
   --color-bg-overlay: rgba(24,24,27,0.65);
-  --color-text: #b3b3b3;
-  --color-text-muted: #888;
+  --color-text: #d4d4d4;
+  --color-text-muted: #a0a0a0;
   --color-accent: #6d7cff;
   --color-accent-alt: #a78bfa;
   --color-accent-strong: #43e0ff;
@@ -16,11 +16,11 @@
   /* Font families */
   --font-pixel: 'Press Start 2P', cursive;
 
-  /* Font sizes (scale) */
-  --fs-hero: 2.2rem;
-  --fs-h2: 1.1rem;
-  --fs-body: 0.95rem;
-  --fs-small: 0.75rem;
+  /* Font sizes (scale) - Fluid typography using clamp() */
+  --fs-hero: clamp(1.5rem, 4vw + 0.5rem, 2.2rem);
+  --fs-h2: clamp(1rem, 2vw + 0.3rem, 1.1rem);
+  --fs-body: clamp(0.85rem, 1.5vw + 0.2rem, 0.95rem);
+  --fs-small: clamp(0.7rem, 1vw + 0.15rem, 0.75rem);
 
   /* Spacing scale */
   --space-1: 0.25rem;
@@ -40,8 +40,10 @@
   --shadow-hero: 0 4px 24px #000a;
 
   /* Z-index */
+  --z-bg-video: -2;
+  --z-bg-overlay: -1;
   --z-starfield: 0;
   --z-content: 1;
   --z-nav: 2;
-  --z-overlay: 3;
+  --z-modal: 1000;
 }

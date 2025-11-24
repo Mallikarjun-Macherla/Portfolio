@@ -2,5 +2,5 @@
 :focus { outline: 2px dashed var(--color-text); outline-offset: 2px; }
 .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
 [aria-live] { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
-.skip-link { position: absolute; top: -40px; left: 8px; background: var(--color-bg); color: var(--color-accent-strong); padding: 8px 14px; font-family: var(--font-pixel); font-size: 0.75rem; text-decoration: none; border: 2px dashed var(--color-accent-strong); z-index: 1000; transition: top 0.25s ease; }
+.skip-link { position: absolute; top: -40px; left: 8px; background: var(--color-bg); color: var(--color-accent-strong); padding: 8px 14px; font-family: var(--font-pixel); font-size: 0.75rem; text-decoration: none; border: 2px dashed var(--color-accent-strong); z-index: var(--z-modal); transition: top 0.25s ease; }
 .skip-link:focus, .skip-link:focus-visible { top: 8px; outline: none; }
