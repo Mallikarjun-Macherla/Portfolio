@@ -1,0 +1,30 @@
+/* base.css: relies on tokens defined in tokens.css */
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-pixel);
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h2 {
+    color: var(--color-text);
+    font-size: 1.1rem;
+    border-bottom: 2px dashed var(--color-bg-alt);
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 var(--color-bg);
+}
+
+ul {
+    list-style: square inside;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.7em;
+}

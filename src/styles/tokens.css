@@ -1,0 +1,47 @@
+/* tokens.css: Central design tokens (colors, fonts, spacing, z-index) */
+:root {
+  /* Colors */
+  --color-bg: #18181b;
+  --color-bg-alt: #23232b;
+  --color-bg-overlay: rgba(24,24,27,0.65);
+  --color-text: #b3b3b3;
+  --color-text-muted: #888;
+  --color-accent: #6d7cff;
+  --color-accent-alt: #a78bfa;
+  --color-accent-strong: #43e0ff;
+  --color-border: #23232b;
+  --color-border-strong: #444;
+  --color-card-bg: #23232b;
+
+  /* Font families */
+  --font-pixel: 'Press Start 2P', cursive;
+
+  /* Font sizes (scale) */
+  --fs-hero: 2.2rem;
+  --fs-h2: 1.1rem;
+  --fs-body: 0.95rem;
+  --fs-small: 0.75rem;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 4px #0007;
+  --shadow-hero: 0 4px 24px #000a;
+
+  /* Z-index */
+  --z-starfield: 0;
+  --z-content: 1;
+  --z-nav: 2;
+  --z-overlay: 3;
+}

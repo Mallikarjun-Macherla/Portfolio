@@ -1,0 +1,68 @@
+/* Accessible focus styles: provide visible outline instead of removing it */
+button:focus, button:focus-visible,
+.theme-btn:focus, .theme-btn:focus-visible,
+.pixel-btn:focus, .pixel-btn:focus-visible,
+.navbar a:focus, .navbar a:focus-visible,
+.repo-link:focus, .repo-link:focus-visible,
+.cert-link:focus, .cert-link:focus-visible,
+.footer-link-row:focus, .footer-link-row:focus-visible {
+    outline: 2px dashed var(--color-accent-strong);
+    outline-offset: 3px;
+    text-decoration: none;
+}
+
+
+.theme-btn {
+    background: transparent;
+    color: var(--color-accent);
+    border: none;
+    border-radius: 0;
+    padding: 0.5em 1.2em;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.18s, text-decoration 0.18s;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: none;
+}
+.theme-btn:hover {
+    color: var(--color-accent-alt);
+    background: transparent;
+    text-decoration: none;
+}
+
+
+.pixel-btn {
+    background: transparent;
+    color: var(--color-accent);
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.08rem;
+    padding: 0.7em 1.2em;
+    border-radius: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s, text-shadow 0.2s;
+    margin-top: 1em;
+    box-shadow: none;
+}
+
+.pixel-btn:hover, .pixel-btn:focus {
+    background: transparent;
+    color: var(--color-accent-alt);
+    outline: none;
+    text-decoration: underline;
+    text-shadow: 0 0 8px #a78bfa, 0 0 2px #fff;
+}
+
+.pixel-card, .project-card {
+    transition: box-shadow 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+.pixel-card:hover, .project-card:hover {
+    border-color: var(--color-accent-alt);
+    box-shadow: 0 0 0 6px var(--color-accent-alt), 0 0 16px var(--color-accent), 0 0 0 8px var(--color-bg-alt);
+    transform: translateY(-6px) scale(1.03);
+}

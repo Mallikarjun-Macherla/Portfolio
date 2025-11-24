@@ -1,0 +1,21 @@
+# Node / tooling (if added later)
+node_modules/
+.dist/
+dist/
+.cache/
+.vscode/
+# OS files
+.DS_Store
+Thumbs.db
+# Logs
+*.log
+# Env / secrets (if added later)
+.env
+.env.*
+# Build artifacts
+*.tgz
+# Media (optional: keep if small; uncomment to ignore large raw backgrounds)
+# assets/bg/*.mp4
+# assets/bg/*.webm
+# assets/bg/*.ogg
+# If using Git LFS for videos, remove above ignores and track via LFS.

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallikarjun Macherla</title>
+    <!-- SEO & Social Metadata -->
+    <meta name="description" content="Mallikarjun Macherla – retro-themed portfolio showcasing machine learning, fraud detection, and web development projects.">
+    <meta name="theme-color" content="#18181b">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mallikarjun Macherla Portfolio">
+    <meta property="og:description" content="Projects in deepfake detection, payment fraud analysis, ML, and full-stack development.">
+    <meta property="og:image" content="assets/img/image.png">
+    <!-- Optional: set real deployment URL below -->
+    <!-- <meta property="og:url" content="https://your-domain.example"> -->
+    <link rel="icon" type="image/png" href="assets/img/image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Updated stylesheet path to new src structure -->
+    <link rel="stylesheet" href="src/styles/index.css">
+</head>
+<body>
+    <a href="#home" class="skip-link">Skip to main content</a>
+    <canvas id="star-canvas"></canvas>
+    <div class="pixel-frame"></div>
+    <nav class="navbar" style="position: relative;">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+                <li><a class="theme-btn" href="src/assets/docs/Resume.pdf" download aria-label="Download Resume PDF">Resume</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn">Switch Theme</button>
+    </nav>
+    <div id="bg-video-container"></div>
+    <div id="bg-overlay"></div>
+    <div class="container">
+        <header id="home">
+            <div class="hero-banner">
+                <img src="assets/img/image.png" alt="Pixel-stylized mountain landscape background" class="hero-img-pixel" loading="lazy" decoding="async" fetchpriority="high" />
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Macherla Mallikarjun</h1>
+                    <br>
+                    <p class="subtitle">Personal Portfolio</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="about" id="about">
+                <h2>About Me</h2>
+                <p>I’m a computer science student with a strong foundation in programming, data structures, and full-stack development. I enjoy solving problems, building web applications, and exploring machine learning through hands-on projects.</p>
+            </section>
+            <section class="projects" id="projects">
+                <h2 class="section-heading section-heading--projects">Curious to <span class="accent">see</span> my work?</h2>
+                <div class="grid projects-grid projects-grid--center">
+                    <div class="pixel-card project-card">
+                        <h3 class="project-card__title">Deepfake Detection Model using EfficientNet-B0</h3>
+                        <p class="project-card__desc">A machine learning model for detecting AI-generated manipulations in videos. Utilizes EfficientNet-B0 for feature extraction and classification, supported by optimized preprocessing and augmentation techniques</p>
+                            <a class="pixel-btn" href="https://github.com/Mallikarjun-Macherla/DeepfakeDetection" target="_blank" rel="noopener noreferrer">Go to →</a>
+                    </div>
+                    <div class="pixel-card project-card">
+                        <h3 class="project-card__title">Payment Fraud Detection System</h3>
+                        <p class="project-card__desc">A machine learning solution for identifying fraudulent transactions in large-scale financial datasets. Employs advanced preprocessing, feature optimization, and model evaluation using ROC-AUC and precision-recall metrics to ensure accuracy and reliability.</p>
+                            <a class="pixel-btn" href="https://github.com/Mallikarjun-Macherla/Online-Payment-Fraud-Detection-Model" target="_blank" rel="noopener noreferrer">Go to →</a>
+                    </div>
+                </div>
+                <div class="projects-more">
+                <a class="pixel-btn" href="https://github.com/Mallikarjun-Macherla" target="_blank" rel="noopener noreferrer">See More →</a>
+                </div>
+            </section>
+                <section class="skills" id="skills">
+                    <h2>Skills</h2>
+                    <div class="skills-categories">
+                        <div class="skills-category">
+                            <h3>Programming Languages</h3>
+                            <div class="skills-grid">
+                                <div class="skill-card">Python</div>
+                                <div class="skill-card">Java</div>
+                                <div class="skill-card">HTML/CSS</div>
+                                <div class="skill-card">JavaScript</div>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <h3>Frameworks/Libraries</h3>
+                            <div class="skills-grid">
+                                <div class="skill-card">React</div>
+                                <div class="skill-card">NumPy</div>
+                                <div class="skill-card">Pandas</div>
+                                <div class="skill-card">Matplotlib</div>
+                                <div class="skill-card">OpenCV</div>
+                                <div class="skill-card">Tensorflow</div>
+                                <div class="skill-card">Scikit-Learn</div>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <h3>Databases</h3>
+                            <div class="skills-grid">
+                                <div class="skill-card">MySQL</div>
+                                <div class="skill-card">SQLite</div>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <h3>Tools</h3>
+                            <div class="skills-grid">
+                                <div class="skill-card">Git/GitHub</div>
+                                <div class="skill-card">VS Code</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                    <section class="certificates" id="certificates">
+                        <h2>Certificates</h2>
+                        <ul class="cert-list">
+                            <li>
+                                <strong>Python Fundamentals</strong> – GreatLearning
+                                <a class="cert-link" href="https://www.mygreatlearning.com/certificate/CTBLGKGA" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                            </li>
+                            <li>
+                                <strong>Problem Solving (Basic)</strong> – Hackerrank
+                                <a class="cert-link" href="https://www.hackerrank.com/certificates/iframe/a190ac201300" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                            </li>
+                        </ul>
+                    </section>
+        </main>
+    </div>
+    <footer id="contact" class="footer-contact">
+            <div class="footer-contact-wrapper">
+                <div class="footer-about">
+                <h2>Connect With Me</h2>
+                <p>Always open to connect and collaborate!</p>
+                <div class="footer-links-vertical" style="display: flex; flex-direction: column; align-items: center; gap: 1em; margin-top: 1em;">
+                    <a href="mailto:mallikarjunmac05@gmail.com" target="_blank" rel="noopener noreferrer" class="footer-link-row">
+                        <span class="icon-pixel icon-email" aria-hidden="true"></span>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/MallikarjunMacherla/" target="_blank" rel="noopener noreferrer" class="footer-link-row">
+                        <span class="icon-pixel icon-linkedin" aria-hidden="true"></span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/Mallikarjun-Macherla" target="_blank" rel="noopener noreferrer" class="footer-link-row">
+                        <span class="icon-pixel icon-github" aria-hidden="true"></span>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Updated script paths to new src/scripts directory -->
+    <script src="src/scripts/starfield.js" defer></script>
+    <script src="src/scripts/main.js" defer></script>
+    <script src="src/scripts/backgrounds.js" defer></script>
+</body>
+</html>

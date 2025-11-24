@@ -1,0 +1,84 @@
+/* components.css migrated */
+nav {
+    background: var(--color-bg);
+    border-bottom: 4px solid #b3b3b3;
+    box-shadow: 0 2px 0 #23232b;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.5em 1em;
+    border: 2px solid transparent;
+    border-radius: 0;
+    transition: border 0.2s, color 0.2s;
+}
+nav a.active, nav a:hover, nav a:focus {
+    border: 2px solid transparent;
+    color: #fff;
+    background: transparent !important;
+    outline: none;
+    animation: nav-hover 0.3s;
+}
+@keyframes nav-hover {
+    0% { color: #b3b3b3; }
+    100% { color: #fff; }
+}
+.hero {
+    background: var(--color-bg-alt);
+    color: var(--color-text);
+    padding: 2em 1em;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 0 4px #18181b, 0 0 0 8px #23232b;
+}
+.project-card {
+    background: #2d254c;
+    border: 3px solid #b3b3ff;
+    box-shadow: 0 0 0 4px #18181b, 0 0 0 8px #23232b;
+    border-radius: 0;
+    padding: 1.5em 1em; /* reduced padding for smaller footprint */
+    margin-bottom: 1em;
+    font-size: 0.9rem; /* slightly smaller text */
+    color: #b3b3ff;
+    text-align: center;
+    width: 300px; /* narrower card */
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 340px; /* fixed height similar to original smaller cards */
+    overflow: hidden; /* hide any slight overflow outside card */
+}
+
+/* Make description area consume remaining space and allow internal scroll if long */
+.project-card__desc {
+    flex-grow: 1;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox hide */
+}
+.project-card__desc::-webkit-scrollbar { display: none; }
+.overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(24,24,27,0.95);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal {
+    background: #23232b;
+    border: 4px solid #b3b3b3;
+    box-shadow: 0 0 0 4px #18181b, 0 0 0 8px #23232b;
+    border-radius: 0;
+    padding: 2em 1.5em;
+    color: #b3b3b3;
+    min-width: 300px;
+    max-width: 90vw;
+}
